@@ -8,8 +8,15 @@ routes.use(express.json());
 //route url GET doctors
 routes.get("/doctors" , doctorHandler.getDoctor);
 
+//route url GET rating doctor
+routes.get("/doctors/rating/highest", doctorHandler.GetHighestRating)
+
+routes.get("/doctors/rating/lowest", doctorHandler.GetLowestRating)
+
+
 //route url POST doctors
 routes.post("/doctors", doctorHandler.PostDoctor);
+
 
 
 module.exports = routes;

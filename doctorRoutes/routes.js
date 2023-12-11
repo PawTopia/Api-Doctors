@@ -13,6 +13,8 @@ routes.get("/doctors/rating/highest", doctorHandler.GetHighestRating)
 
 routes.get("/doctors/rating/lowest", doctorHandler.GetLowestRating)
 
+routes.delete("/doctors/delete", doctorHandler.DeleteDoctor)
+
 
 //route url POST doctors
 routes.post("/doctors", doctorHandler.PostDoctor);

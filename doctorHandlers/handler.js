@@ -91,4 +91,24 @@ function PostDoctor(req, res) {
     res.status(200).json({ success: "true", message: 'Doctor added successfully ', doctors: doctorsData.Doctor.find((doctor) => doctor.id === newDoctor.id) })
 }
 
-module.exports = { getDoctor, PostDoctor, GetHighestRating, GetLowestRating };
+function DeleteDoctor(req, res) {
+    const { id } = req.query;
+
+    if (!id) {
+        return res.status(400).json({ error: true, message: 'Invalid ID provided' });
+    }
+
+    const updatedDoctors = doctorsData.Doctor.filter(doctor => doctor.id !== parseInt(id));
+
+    if (updatedDoctors.length === doctorsData.Doctor.length) {
+        return res.status(404).json({ error: true, message: 'No doctor with such ID was found' });
+    }
+
+    doctorsData.Doctor = updatedDoctors;
+
+    WriteDoctorData(doctorsData);
+
+    res.json({ message: 'Doctor deleted successfully', doctors: doctorsData.Doctor });
+}
+
+module.exports = { getDoctor, PostDoctor, GetHighestRating, GetLowestRating, DeleteDoctor };

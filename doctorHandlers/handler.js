@@ -12,10 +12,11 @@ function getDoctor(req, res) {
             const FindDoctorbyID = doctorsData.Doctor.find((doctor) => doctor.id === parseInt(id))
 
             // return data jika ada, jika tidak ada return "Doctor not found" dengan status 404
-            return FindDoctorbyID || { id: parseInt(id), message: "Doctor not found", status: "400" };
+            return FindDoctorbyID || { id: parseInt(id), success: "false", message: "Doctor not found" };
         })
         // membalikan respon 200 bahwa request berhasil masuk
         res.status(200).json({
+            success: "true",
             message: "Request has been received successfully",
             data: DoctorList,
         });
@@ -28,7 +29,7 @@ function GetHighestRating(req, res) {
     const doctorsSortedByRating = [...doctorsData.Doctor].sort((a, b) => b.rating - a.rating);
 
     if (doctorsSortedByRating.length === 0) {
-        return res.status(404).json({ error: true, message: 'No ratings available' });
+        return res.status(404).json({ success: false, message: 'No ratings available' });
     }
 
     res.status(200).json({
@@ -41,7 +42,7 @@ function GetLowestRating(req, res) {
     const doctorsSortedByRating = [...doctorsData.Doctor].sort((a, b) => a.rating - b.rating);
 
     if (doctorsSortedByRating.length === 0) {
-        return res.status(404).json({ error: true, message: 'No ratings available' });
+        return res.status(404).json({ success: false, message: 'No ratings available' });
     }
 
 
@@ -72,16 +73,22 @@ function PostDoctor(req, res) {
     //fungsi untuk post 
     const newDoctor = req.body
 
+
+    console.log('Received new doctor data:', newDoctor);
     //validasi Body reques dari POST
     if (!validateDoctor(newDoctor, doctorsData.Doctor)) {
-        return res.status(404).json({ success: "false", message: "invalid or duplicate doctor data" })
+        console.error('Validation failed:', newDoctor);
+        return res.status(400).json({ success: "false", message: "invalid or duplicate doctor data" })
     }
 
+    //push request data kedalam array doctor
     doctorsData.Doctor.push(newDoctor)
 
+    //menuliskan request data kedalam file doctor.json
     WriteDoctorData(doctorsData)
 
-    res.json({ message: 'Doctor added successfully ', doctors: doctorsData.Doctor })
+    // menampilkan hasil dari request
+    res.status(200).json({ success: "true", message: 'Doctor added successfully ', doctors: doctorsData.Doctor.find((doctor) => doctor.id === newDoctor.id) })
 }
 
 module.exports = { getDoctor, PostDoctor, GetHighestRating, GetLowestRating };

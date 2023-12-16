@@ -1,0 +1,67 @@
+{
+    "petShopDummyMap": [
+        {
+            "name": "Selina's Pet Shop",
+            "location": "Buah Batu, Bandung",
+            "type": "Dog Shop",
+            "contact": "+628123456781",
+            "image": "path_to_image_file/selinas_pet_shop.jpg"
+        },
+        {
+            "name": "Olivia's Pet Shop",
+            "location": "Sukasari, Bandung",
+            "type": "Cat Shop",
+            "contact": "+628123456782",
+            "image": "path_to_image_file/olivias_pet_shop.jpg"
+        },
+        {
+            "name": "Buddy's Pet Shop",
+            "location": "Rancasari, Bandung",
+            "type": "Dog Shop",
+            "contact": "+628123456783",
+            "image": "path_to_image_file/buddys_pet_shop.jpg"
+        },
+        {
+            "name": "Charlie's Pet Shop",
+            "location": "Antapani, Bandung",
+            "type": "Dog Shop",
+            "contact": "+628123456785",
+            "image": "path_to_image_file/charlies_pet_shop.jpg"
+        },
+        {
+            "name": "Bella's Pet Shop",
+            "location": "Batununggal, Bandung",
+            "type": "Cat Shop",
+            "contact": "+628123456786",
+            "image": "path_to_image_file/bellas_pet_shop.jpg"
+        },
+        {
+            "name": "Max's Pet Shop",
+            "location": "Cibeureum, Bandung",
+            "type": "Dog Shop",
+            "contact": "+628123456787",
+            "image": "path_to_image_file/maxs_pet_shop.jpg"
+        },
+        {
+            "name": "Milo's Pet Shop",
+            "location": "Katapang, Bandung",
+            "type": "Dog Shop",
+            "contact": "+628123456788",
+            "image": "path_to_image_file/milos_pet_shop.jpg"
+        },
+        {
+            "name": "Simba's Pet Shop",
+            "location": "Mandalajati, Bandung",
+            "type": "Cat Shop",
+            "contact": "+628123456789",
+            "image": "path_to_image_file/simbas_pet_shop.jpg"
+        },
+        {
+            "name": "Simba's Pet Shop",
+            "location": "Mandalajati, Jakarta",
+            "type": "Cat Shop",
+            "contact": "+628123456789",
+            "image": "path_to_image_file/simbas_pet_shop.jpg"
+        }
+    ]
+}

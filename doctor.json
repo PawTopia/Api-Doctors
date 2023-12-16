@@ -87,14 +87,6 @@
       "biography": "Dr. New Doctor is a general practitioner providing comprehensive healthcare services.",
       "rating": 4.2,
       "patien": 10
-    },
-    {
-      "id": 12,
-      "name": "Dr. New Doctor",
-      "specialization": "General Practitioner",
-      "biography": "Dr. New Doctor is a general practitioner providing comprehensive healthcare services.",
-      "rating": 4.2,
-      "patien": 10
     }
   ]
 }

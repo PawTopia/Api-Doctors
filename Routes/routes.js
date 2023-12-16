@@ -21,7 +21,7 @@ routes.delete("/doctors/delete", doctorHandler.DeleteDoctor)
 routes.post("/doctors", doctorHandler.PostDoctor);
 
 //route url GET map-clinic
-routes.get('/Clinic', mapHandler.getMapClinic)
+routes.get('/clinic', mapHandler.getMapClinic)
 
 
 

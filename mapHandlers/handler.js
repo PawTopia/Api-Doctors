@@ -1,15 +1,12 @@
-const map = require("../clinics.json")
+const mapDummydata = require("../clinics.json")
 
 function getMapClinic(req, res) {
-    const { name, location, type } = req.body
-
-    if (name || location || type) {
+    const {location} = req.body
+    if (location) {
         // Find specific clinic based on request body parameters
-        const foundClinics = clinicsData.petShopDummyMap.filter((clinic) => {
+        const foundClinics = mapDummydata.petShopDummyMap.filter((clinic) => {
             return (
-                (!name || clinic.name.toLowerCase().includes(name.toLowerCase())) &&
-                (!location || clinic.location.toLowerCase().includes(location.toLowerCase())) &&
-                (!type || clinic.type.toLowerCase() === type.toLowerCase())
+                (!location || clinic.location.toLowerCase().includes(location.toLowerCase()))
             );
         });
 
@@ -17,11 +14,12 @@ function getMapClinic(req, res) {
             return res.status(404).json({ message: 'No matching clinic found.' });
         }
 
-        return res.status(200).json(foundClinics);
+        return res.status(200).json({Success:"True",message:"Data found",foundClinics});
     } else {
         // Display all clinics when there is no request body
-        return res.status(200).json(clinicsData.petShopDummyMap);
+        return res.status(200).json({Success:"True",message:"Request has been received successfully", data:mapDummydata.petShopDummyMap});
     }
 }
+
 
 module.exports = { getMapClinic }

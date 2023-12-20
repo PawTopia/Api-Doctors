@@ -1,67 +1,93 @@
 {
     "petShopDummyMap": [
-        {
-            "name": "Selina's Pet Shop",
-            "location": "Buah Batu, Bandung",
-            "type": "Dog Shop",
-            "contact": "+628123456781",
-            "image": "path_to_image_file/selinas_pet_shop.jpg"
-        },
-        {
-            "name": "Olivia's Pet Shop",
-            "location": "Sukasari, Bandung",
-            "type": "Cat Shop",
-            "contact": "+628123456782",
-            "image": "path_to_image_file/olivias_pet_shop.jpg"
-        },
-        {
-            "name": "Buddy's Pet Shop",
-            "location": "Rancasari, Bandung",
-            "type": "Dog Shop",
-            "contact": "+628123456783",
-            "image": "path_to_image_file/buddys_pet_shop.jpg"
-        },
-        {
-            "name": "Charlie's Pet Shop",
-            "location": "Antapani, Bandung",
-            "type": "Dog Shop",
-            "contact": "+628123456785",
-            "image": "path_to_image_file/charlies_pet_shop.jpg"
-        },
-        {
-            "name": "Bella's Pet Shop",
-            "location": "Batununggal, Bandung",
-            "type": "Cat Shop",
-            "contact": "+628123456786",
-            "image": "path_to_image_file/bellas_pet_shop.jpg"
-        },
-        {
-            "name": "Max's Pet Shop",
-            "location": "Cibeureum, Bandung",
-            "type": "Dog Shop",
-            "contact": "+628123456787",
-            "image": "path_to_image_file/maxs_pet_shop.jpg"
-        },
-        {
-            "name": "Milo's Pet Shop",
-            "location": "Katapang, Bandung",
-            "type": "Dog Shop",
-            "contact": "+628123456788",
-            "image": "path_to_image_file/milos_pet_shop.jpg"
-        },
-        {
-            "name": "Simba's Pet Shop",
-            "location": "Mandalajati, Bandung",
-            "type": "Cat Shop",
-            "contact": "+628123456789",
-            "image": "path_to_image_file/simbas_pet_shop.jpg"
-        },
-        {
-            "name": "Simba's Pet Shop",
-            "location": "Mandalajati, Jakarta",
-            "type": "Cat Shop",
-            "contact": "+628123456789",
-            "image": "path_to_image_file/simbas_pet_shop.jpg"
-        }
+      {
+        "id": 1,
+        "name": "Selina's Pet Shop",
+        "location": "Buah Batu, Bandung",
+        "contact": "+628123456781",
+        "latitude": -6.938687,
+        "longitude": 107.642247,
+        "rating": 4.2,
+        "description": "Selina's Pet Shop is a welcoming place for dog lovers. Our dedicated team provides a range of products and services to ensure the well-being of your canine companions.",
+        "bookmark": false
+      },
+      {
+        "id": 2,
+        "name": "Olivia's Pet Shop",
+        "location": "Sukasari, Bandung",
+        "contact": "+628123456782",
+        "latitude": -6.907436,
+        "longitude": 107.601643,
+        "rating": 3.8,
+        "description": "Olivia's Pet Shop caters to the needs of feline enthusiasts. Our knowledgeable staff is committed to providing quality products and care for your beloved cats.",
+        "bookmark": false
+      },
+      {
+        "id": 3,
+        "name": "Buddy's Pet Shop",
+        "location": "Rancasari, Bandung",
+        "contact": "+628123456783",
+        "latitude": -6.967901,
+        "longitude": 107.669201,
+        "rating": 4.5,
+        "description": "Buddy's Pet Shop is a haven for dog lovers. Our friendly team offers a variety of dog-related products and services to meet the needs of your furry friends.",
+        "bookmark": false
+      },
+      {
+        "id": 4,
+        "name": "Charlie's Pet Shop",
+        "location": "Antapani, Bandung",
+        "contact": "+628123456785",
+        "latitude": -6.926951,
+        "longitude": 107.659339,
+        "rating": 4.0,
+        "description": "Charlie's Pet Shop is a dog-friendly establishment dedicated to providing quality care and products. Our 4.0-star rating reflects our commitment to customer satisfaction.",
+        "bookmark": false
+      },
+      {
+        "id": 5,
+        "name": "Bella's Pet Shop",
+        "location": "Batununggal, Bandung",
+        "contact": "+628123456786",
+        "latitude": -6.934593,
+        "longitude": 107.621116,
+        "rating": 4.7,
+        "description": "Bella's Pet Shop is a haven for cat lovers. With a 4.7-star rating, we specialize in catering to the unique needs of your feline friends.",
+        "bookmark": false
+      },
+      {
+        "id": 6,
+        "name": "Max's Pet Shop",
+        "location": "Cibeureum, Bandung",
+        "contact": "+628123456787",
+        "latitude": -6.916508,
+        "longitude": 107.684765,
+        "rating": 3.5,
+        "description": "Max's Pet Shop is dedicated to providing quality products and services for dogs. Our 3.5-star rating reflects our commitment to excellence in pet care.",
+        "bookmark": false
+      },
+      {
+        "id": 7,
+        "name": "Milo's Pet Shop",
+        "location": "Katapang, Bandung",
+        "contact": "+628123456788",
+        "latitude": -6.994250,
+        "longitude": 107.576786,
+        "rating": 4.1,
+        "description": "Milo's Pet Shop is your go-to place for dog-related products and services. Our 4.1-star rating reflects our dedication to providing top-notch care for your furry companions.",
+        "bookmark": false
+      },
+      {
+        "id": 8,
+        "name": "Simba's Pet Shop",
+        "location": "Mandalajati, Bandung",
+        "contact": "+628123456789",
+        "latitude": -6.936719,
+        "longitude": 107.642574,
+        "rating": 4.3,
+        "description": "Simba's Pet Shop is a cat-friendly space dedicated to the unique needs of feline friends. Our 4.3-star rating reflects our commitment to providing a comfortable environment for your cats.",
+        "bookmark": false
+      }
     ]
-}
+  }
+  

@@ -6,7 +6,7 @@
       "specialization": "Cardiologist",
       "biography": "Dr. John Smith is a highly experienced cardiologist with a focus on heart health. He has been practicing medicine for over 20 years and is dedicated to providing the best care for his patients.",
       "rating": 4.5,
-      "patien": 10
+      "patients": 15
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "specialization": "Pediatrician",
       "biography": "Dr. Emily Johnson is a compassionate pediatrician who loves working with children. She believes in creating a friendly and comfortable environment for her young patients to ensure they receive the best possible care.",
       "rating": 4.8,
-      "patien": 10
+      "patients": 12
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "specialization": "Orthopedic Surgeon",
       "biography": "Dr. Michael Davis specializes in orthopedic surgery, focusing on the musculoskeletal system. With a commitment to surgical excellence, he helps patients regain mobility and improve their quality of life.",
       "rating": 4.2,
-      "patien": 10
+      "patients": 18
     },
     {
       "id": 4,
@@ -30,7 +30,7 @@
       "specialization": "Dermatologist",
       "biography": "Dr. Sarah Miller is a dedicated dermatologist with expertise in skin health. She believes in a holistic approach to dermatology, addressing both medical and cosmetic concerns to help her patients achieve healthy and radiant skin.",
       "rating": 4.6,
-      "patien": 10
+      "patients": 20
     },
     {
       "id": 5,
@@ -38,7 +38,7 @@
       "specialization": "Neurologist",
       "biography": "Dr. Robert Lee is a neurologist specializing in disorders of the nervous system. With a keen interest in research, he stays updated on the latest advancements in neurology to provide cutting-edge care to his patients.",
       "rating": 4.9,
-      "patien": 10
+      "patients": 15
     },
     {
       "id": 6,
@@ -46,7 +46,7 @@
       "specialization": "Gynecologist",
       "biography": "Dr. Linda Rodriguez is a caring gynecologist dedicated to women's health. With a focus on preventive care, she strives to empower women to make informed decisions about their health.",
       "rating": 4.4,
-      "patien": 10
+      "patients": 22
     },
     {
       "id": 7,
@@ -54,7 +54,7 @@
       "specialization": "Ophthalmologist",
       "biography": "Dr. William Turner is an ophthalmologist with a passion for eye care. He combines medical expertise with a commitment to patient education, ensuring his patients understand and participate in their eye health.",
       "rating": 4.7,
-      "patien": 10
+      "patients": 18
     },
     {
       "id": 8,
@@ -62,7 +62,7 @@
       "specialization": "Psychiatrist",
       "biography": "Dr. Karen White is a compassionate psychiatrist specializing in mental health. She provides comprehensive care, emphasizing a patient-centered approach to address mental health challenges.",
       "rating": 4.3,
-      "patien": 10
+      "patients": 25
     },
     {
       "id": 9,
@@ -70,7 +70,7 @@
       "specialization": "Dentist",
       "biography": "Dr. James Carter is a skilled dentist dedicated to oral health. With a focus on preventive dentistry, he helps patients achieve and maintain healthy smiles.",
       "rating": 4.6,
-      "patien": 10
+      "patients": 16
     },
     {
       "id": 10,
@@ -78,7 +78,7 @@
       "specialization": "Family Medicine",
       "biography": "Dr. Maria Lopez is a family medicine practitioner committed to providing comprehensive care to individuals and families. She focuses on building long-term relationships with her patients.",
       "rating": 4.4,
-      "patien": 10
+      "patients": 30
     },
     {
       "id": 11,
@@ -86,15 +86,7 @@
       "specialization": "General Practitioner",
       "biography": "Dr. New Doctor is a general practitioner providing comprehensive healthcare services.",
       "rating": 4.2,
-      "patien": 10
-    },
-    {
-      "id": 12,
-      "name": "Dr. New Doctor",
-      "specialization": "General Practitioner",
-      "biography": "Dr. New Doctor is a general practitioner providing comprehensive healthcare services.",
-      "rating": 4.2,
-      "patien": 10
+      "patients": 10
     }
   ]
 }

@@ -6,20 +6,26 @@ function getDoctor(req, res) {
     const { id } = req.query
     if (id) {
         // DoctorList menfilter dari beberapa id yang diberikan
-        const DoctorList = id.split(',').map((id) => {
-
-            // FindDoctorbyID mencari id jika ada, jika tidak ada akan menampilkan keseluruhan data 
-            const FindDoctorbyID = doctorsData.Doctor.find((doctor) => doctor.id === parseInt(id))
-
-            // return data jika ada, jika tidak ada return "Doctor not found" dengan status 404
-            return FindDoctorbyID || { id: parseInt(id), success: "false", message: "Doctor not found" };
-        })
-        // membalikan respon 200 bahwa request berhasil masuk
-        res.status(200).json({
-            success: "true",
-            message: "Request has been received successfully",
-            data: DoctorList,
+        const idArray = id.split(',');
+        const DoctorList = idArray.map((id) => {
+            return doctorsData.Doctor.find((doctor) => doctor.id === parseInt(id));
         });
+        // membalikan respon 200 bahwa request berhasil masuk
+        const hasValidDoctor = DoctorList.some(doctor => doctor !== undefined);
+        if (hasValidDoctor) {
+            res.status(200).json({
+                success: "true",
+                message: "Request has been received successfully",
+                data: DoctorList,
+            });
+        }else{
+            // mengembalikan respon 400 jika data tidak ditemukan
+            res.status(404).json({
+                success: "false",
+                message: "Doctor Not Found",
+            });
+        }
+            
     } else {
         res.json(doctorsData)
     }

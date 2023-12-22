@@ -12,14 +12,8 @@ This API is under **_development_** but almost 60% covered all need on our appli
 ## Content Type
 - application/json; charset=utf-8
 # Helper-doctor
-<details>
-<summary>GET all data doctor</summary>
-  <h1>
-    hello
-  </h1>
-  
-</details>
-
+## Method
+- GET
 
 
 

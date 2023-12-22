@@ -11,9 +11,16 @@ This API is under **_development_** but almost 60% covered all need on our appli
   - GET : /clinic
 ## Content Type
 - application/json; charset=utf-8
-## Method
-  ### GET
-  URL P
+# Helper-doctor
+<details>
+<summary>GET all data doctor</summary>
+  <h1>
+    hello
+  </h1>
+  
+</details>
+
+
 
 
 
